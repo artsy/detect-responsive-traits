@@ -29,7 +29,7 @@
     "preset": "ts-jest"
   },
   "prettier": {
-    "printWidth": 115,
+    "printWidth": 120,
     "semi": false,
     "singleQuote": false,
     "trailingComma": "es5",
