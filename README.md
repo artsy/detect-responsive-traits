@@ -1,12 +1,12 @@
-device-size
+detect-responsive-traits
 
 [Your README here]
 
 ## How do I work on this?
 
 ```sh
-git clone https://github.com/alloy/device-size.git
-cd device-size
+git clone https://github.com/artsy/detect-responsive-traits.git
+cd detect-responsive-traits
 yarn install
 
 # Open VS Code with `code .`

@@ -1,5 +1,5 @@
 {
-  "name": "device-size",
+  "name": "@artsy/detect-responsive-traits",
   "version": "0.0.1",
   "description": "",
   "main": "build/index.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.3.2",
-    "@types/node": "^10.11.0",
+    "@types/node": "^10.12.9",
     "danger": "^6.1.4",
     "husky": "^1.0.0",
     "jest": "^23.6.0",
