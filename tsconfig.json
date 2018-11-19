@@ -1,23 +1,21 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        "target": "es5",
         "module": "commonjs",
         "rootDir": "src",
         "outDir": "build",
         "allowJs": false,
         "pretty": true,
         "strictNullChecks": true,
-        "declaration": true
+        "declaration": true,
+        "resolveJsonModule": true,
+        "lib": [
+            "es2017"
+        ]
     },
-    "lib":["es2017"],
     "include": [
         "src/**/*.ts",
         "src/**/*.tsx",
-        "dangerfile.ts"
-    ],
-    "exclude": [
-        "dangerfile.ts",
-        "node_modules",
-        "build"
+        "src/**/*.json",
     ]
 }
