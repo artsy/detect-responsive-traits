@@ -26,9 +26,6 @@
       "ignore-bound-class-methods"
     ],
     "switch-default": false,
-    "trailing-comma": [
-      true,
-      { "multiline": "always", "singleline": "never" }
-    ]
+    "trailing-comma": false
   }
 }
