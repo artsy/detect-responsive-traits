@@ -11,11 +11,22 @@ describe("findDevice", () => {
   })
 
   it("uses the largest iPhone version for Mobile Safari, which does not include a model identifier", () => {
-    expect(findDevice(fixtures.iPhone[0])).toMatchObject({
+    // tslint:disable-next-line:no-string-literal
+    expect(findDevice(fixtures["iPhone"][0])).toMatchObject({
       description: "iPhone",
       width: 414,
       height: 896,
       pixelRatio: 3,
+      touch: true,
+    })
+  })
+
+  it("uses the largest iPod touch version for Mobile Safari, which does not include a model identifier", () => {
+    expect(findDevice(fixtures["iPod touch"][0])).toMatchObject({
+      description: "iPod touch",
+      width: 320,
+      height: 568,
+      pixelRatio: 2,
       touch: true,
     })
   })

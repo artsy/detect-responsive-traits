@@ -42,5 +42,20 @@
     ],
     "iPhone XS Max": [
         "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A405 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPhone11,6;FBMD/iPhone;FBSN/iOS;FBSV/12.0.1;FBSS/3;FBCR/AT&T;FBID/phone;FBLC/en_US;FBOP/5;FB"
+    ],
+    "iPod touch": [
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1"
+    ],
+    "iPod touch 5th, 6th generations": [
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 11_2 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C114 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPod7,1;FBMD/iPod touch;FBSN/iOS;FBSV/11.2;FBSS/2;FBCR/;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/1",
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPod5,1;FBMD/iPod touch;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/5"
+    ],
+    "iPod touch 4th generation": [
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPod4,1;FBMD/iPod touch;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/5"
+    ],
+    "iPod touch 1st, 2nd, 3rd generations": [
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPod3,1;FBMD/iPod touch;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/5",
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPod2,1;FBMD/iPod touch;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/5",
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPod1,1;FBMD/iPod touch;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/5"
     ]
 }
