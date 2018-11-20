@@ -8,6 +8,7 @@
  * - https://artsy.looker.com/sql/ybq76vhnzk9dgs
  * - https://www.theiphonewiki.com/wiki/Models
  * - https://en.wikipedia.org/wiki/List_of_iOS_devices
+ * - http://vizdevices.yesviz.com/devices.php
  * - https://www.mydevice.io
  */
 
@@ -102,6 +103,46 @@ export const Devices: Device[] = [
     pixelRatio: 1,
     touch: true,
   },
+  {
+    description: "iPad 1, 2, Mini",
+    userAgent: /iPad(1,1|2,1|2,5)/,
+    width: 1024,
+    height: 768,
+    pixelRatio: 1,
+    touch: true,
+  },
+  {
+    description: "iPad 3, 4, Air, Mini 2, Mini 3, Mini 4, Air 2, Pro 9.7-inch, 5, 6",
+    userAgent: /iPad(3,[1-6]|4,[1-9]|5,[1-4]|6,[34]|6,1[12]|7,[56])/,
+    width: 1024,
+    height: 768,
+    pixelRatio: 2,
+    touch: true,
+  },
+  {
+    description: "iPad Pro 12.9-inch 1st, 2nd, 3rd generations",
+    userAgent: /iPad(6,[78]|7,[12]|8,[5-8])/,
+    width: 1024,
+    height: 1366,
+    pixelRatio: 2,
+    touch: true,
+  },
+  {
+    description: "iPad Pro 10.5-inch",
+    userAgent: /iPad7,[34]/,
+    width: 834,
+    height: 1112,
+    pixelRatio: 2,
+    touch: true,
+  },
+  {
+    description: "iPad Pro 11-inch",
+    userAgent: /iPad8,[1-4]/,
+    width: 834,
+    height: 1194,
+    pixelRatio: 2,
+    touch: true,
+  },
 ]
 
 // Mobile Safari does not include model info, so default to largest versions
@@ -116,6 +157,12 @@ Devices.push({
   userAgent: /iPod touch;/,
   touch: true,
   ...deviceUnion(Devices.filter(device => device.userAgent.toString().includes("iPod"))),
+})
+Devices.push({
+  description: "iPad",
+  userAgent: /iPad;/,
+  touch: true,
+  ...deviceUnion(Devices.filter(device => device.userAgent.toString().includes("iPad"))),
 })
 
 function deviceUnion(devices: Device[]) {

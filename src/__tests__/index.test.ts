@@ -30,4 +30,15 @@ describe("findDevice", () => {
       touch: true,
     })
   })
+
+  it("uses the largest iPad for Mobile Safari, which does not include a model identifier", () => {
+    // tslint:disable-next-line:no-string-literal
+    expect(findDevice(fixtures["iPad"][0])).toMatchObject({
+      description: "iPad",
+      width: 1024,
+      height: 1366,
+      pixelRatio: 2,
+      touch: true,
+    })
+  })
 })
