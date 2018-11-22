@@ -8,18 +8,10 @@ const userAgentKey = "session_pages.user_agent"
 const file = process.argv[2]
 const data = JSON.parse(readFileSync(file, "utf8"))
 
-data.forEach(row => {
-  const userAgent = row[userAgentKey]
-  const device = findDevice(userAgent)
-  if (!device) {
-    console.error(row)
-  }
-})
+const remainder = data.filter(row => !findDevice(row[userAgentKey]))
 
-data.filter(row => {
-  const userAgent = row[userAgentKey]
-  const device = findDevice(userAgent)
-  if (!device) {
-    console.error(row)
-  }
-})
+if (remainder.length > 0) {
+  console.error(remainder)
+}
+
+process.exit(remainder.length)
