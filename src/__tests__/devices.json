@@ -112,5 +112,50 @@
         "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPad8,2;FBMD/iPad;FBSN/iOS;FBSV/12.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]",
         "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPad8,3;FBMD/iPad;FBSN/iOS;FBSV/12.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]",
         "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPad8,4;FBMD/iPad;FBSN/iOS;FBSV/12.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    ],
+    "Samsung Galaxy S8, S8+, S9": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36",
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-G950U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36",
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36",
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Samsung Galaxy S9+": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-G965U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Samsung Note 8, 9": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-N950U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36",
+        "Mozilla/5.0 (Linux; Android 8.1.0; SM-N960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Samsung Galaxy S6, S7, S7 Edge": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-G930F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36",
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-G935F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36",
+        "Mozilla/5.0 (Linux; Android 7.0; SM-G920F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Samsung A5": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; SM-A520F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Samsung Galaxy Tab A 10.1": [
+        "Mozilla/5.0 (Linux; Android 7.0; SM-T580) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Safari/537.36"
+    ],
+    "Google Pixel 2": [
+        "Mozilla/5.0 (Linux; Android 9; Pixel 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Google Pixel 2 XL": [
+        "Mozilla/5.0 (Linux; Android 9; Pixel 2 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Lyf Jio Phone": [
+        "Mozilla/5.0 (Mobile; LYF/F120B/LYF-F120B-001-02-04-230818;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5"
+    ],
+    "Sony Xperia X71": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; G8341) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36'"
+    ],
+    "Motorola Z Droid": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; XT1650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Motorola G4": [
+        "Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    ],
+    "Huawei P20 Lite": [
+        "Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
     ]
 }

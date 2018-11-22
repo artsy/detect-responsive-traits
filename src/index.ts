@@ -9,7 +9,9 @@
  * - https://www.theiphonewiki.com/wiki/Models
  * - https://en.wikipedia.org/wiki/List_of_iOS_devices
  * - http://vizdevices.yesviz.com/devices.php
+ * - http://www.tera-wurfl.com/explore/index.php
  * - https://www.mydevice.io
+ * - http://responsivechecker.net/responsive
  */
 
 export interface Device {
@@ -141,6 +143,110 @@ export const Devices: Device[] = [
     width: 834,
     height: 1194,
     pixelRatio: 2,
+    touch: true,
+  },
+  {
+    description: "Samsung Galaxy S8, S8+, S9",
+    userAgent: /SM-G9(5[05]|60)[A-Z]/,
+    width: 360,
+    height: 740,
+    pixelRatio: 4,
+    touch: true,
+  },
+  {
+    description: "Samsung Galaxy S9+",
+    userAgent: /SM-G965[A-Z]/,
+    width: 412,
+    height: 846,
+    pixelRatio: 3.5,
+    touch: true,
+  },
+  {
+    description: "Samsung Note 8, 9",
+    userAgent: /SM-N9[56]0[A-Z]/,
+    width: 414,
+    height: 846,
+    pixelRatio: 3.5,
+    touch: true,
+  },
+  {
+    description: "Samsung Galaxy S6, S7, S7 Edge",
+    userAgent: /SM-G9(3[05]|20)[A-Z]/,
+    width: 360,
+    height: 640,
+    pixelRatio: 4,
+    touch: true,
+  },
+  {
+    description: "Samsung A5",
+    userAgent: /SM-A520[A-Z]/,
+    width: 360,
+    height: 640,
+    pixelRatio: 2,
+    touch: true,
+  },
+  {
+    description: "Samsung Galaxy Tab A 10.1",
+    userAgent: /SM-T580/,
+    width: 800,
+    height: 1280,
+    pixelRatio: 1.5,
+    touch: true,
+  },
+  {
+    description: "Google Pixel 2 XL",
+    userAgent: /Pixel 2 XL/,
+    width: 411,
+    height: 823,
+    pixelRatio: 3.5,
+    touch: true,
+  },
+  {
+    description: "Google Pixel 2",
+    userAgent: /Pixel 2/,
+    width: 411,
+    height: 731,
+    pixelRatio: 2.6,
+    touch: true,
+  },
+  {
+    description: "Lyf Jio Phone",
+    userAgent: /LYF\/F120B/,
+    width: 240,
+    height: 320,
+    pixelRatio: 1,
+    touch: false,
+  },
+  {
+    description: "Sony Xperia X71",
+    userAgent: /G8341/,
+    width: 360,
+    height: 640,
+    pixelRatio: 3,
+    touch: true,
+  },
+  {
+    description: "Motorola Z Droid",
+    userAgent: /XT1650/,
+    width: 360,
+    height: 640,
+    pixelRatio: 4,
+    touch: true,
+  },
+  {
+    description: "Motorola G4",
+    userAgent: /Moto G \(4\)/,
+    width: 360,
+    height: 640,
+    pixelRatio: 3,
+    touch: true,
+  },
+  {
+    description: "Huawei P20 Lite",
+    userAgent: /ANE-LX1/,
+    width: 360,
+    height: 760,
+    pixelRatio: 3,
     touch: true,
   },
 ]
