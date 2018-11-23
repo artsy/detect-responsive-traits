@@ -14,12 +14,38 @@
  * - http://responsivechecker.net/responsive
  */
 
+/**
+ * The responsive traits of a device (which can span multiple models) and how to recognize it from a user-agent.
+ */
 export interface Device {
+  /**
+   * A human readable description of the device(s)
+   */
   description: string
+
+  /**
+   * A regular-expression that matches the client’s user-agent.
+   */
   userAgent: RegExp
+
+  /**
+   * The width of the device, when held in its portrait orientation.
+   */
   width: number
+
+  /**
+   * The height of the device, when held in its landscape orientation.
+   */
   height: number
+
+  /**
+   * The number of pixels along an axis that make up 1 point.
+   */
   pixelRatio: number
+
+  /**
+   * Wether or not the device is a touch-screen based device.
+   */
   touch: boolean
 }
 
@@ -283,6 +309,11 @@ function deviceUnion(devices: Device[]) {
   )
 }
 
+/**
+ * Returns the first device entry from `devices` that matches the given user-agent.
+ *
+ * @param userAgent The client’s user-agent, usually taken from a HTTP request header.
+ */
 export function findDevice(userAgent: string): Device | undefined {
   return Devices.find(device => device.userAgent.test(userAgent))
 }
