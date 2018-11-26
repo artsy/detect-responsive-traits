@@ -29,6 +29,17 @@ The `touch` value indicates if the device has a touch-screen.
 
 See the [react-responsive-media example app][rrm-example] for a demonstration of how to use this.
 
+## Caveats
+
+We only cover user-agents of which we’ve seen more than 1000 visits over the past 2 weeks on [artsy.net][artsy]. When
+new devices appear in that list we’ll _add_ those to the existing coverage. Having said that, we very much appreciate
+additional coverage in the form of pull-requests!
+
+In our current Android coverage we have many devices defined with a `minWidth` of `0`, because we haven’t yet determined
+what the minimum width is on these devices that Chrome will display at when resizing the window. In case you own these
+devices, please visit a site that reports the [viewport][] and test what the minimum width is both in portrait and
+landscape mode.
+
 ## How do I work on this?
 
 ```sh
@@ -48,5 +59,7 @@ yarn jest
 yarn release
 ```
 
+[artsy]: https://www.artsy.net
 [rrm]: https://github.com/artsy/react-responsive-media
 [rrm-example]: https://github.com/artsy/react-responsive-media/blob/master/example/server.tsx
+[viewport]: http://viewportsizes.com/mine

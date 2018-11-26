@@ -64,7 +64,9 @@ export interface Device {
 }
 
 export const Devices: Device[] = [
-  // Facebook iOS app includes model info when using its builtin webview.
+  /**
+   * Apple iOS devices when using apps that do include device model identifiers (such as the FB app)
+   */
   {
     description: "iPhone XS Max",
     userAgent: /iPhone11,6/,
@@ -214,12 +216,18 @@ export const Devices: Device[] = [
     resizable: true,
     touch: true,
   },
-  // All these Android devices support OS >=7 and with it multi-window support.
-  // TODO: Figure out what the minimum width is that the Chrome browser will display at.
+  /**
+   * Android devices
+   *
+   * All these Android devices support OS >=7 and with it multi-window support.
+   * TODO: Figure out what the minimum width is that the Chrome browser will display at.
+   */
   {
     description: "Samsung Galaxy S8, S8+, S9",
     userAgent: /SM-G9(5[05]|60)[A-Z]/,
-    minWidth: 360,
+    // Device width is 360
+    // Minimum resizable viewport (on a Galaxy S9) was reported by @dblandin
+    minWidth: 221,
     maxWidth: 740,
     pixelRatio: 4,
     resizable: true,
@@ -228,7 +236,9 @@ export const Devices: Device[] = [
   {
     description: "Samsung Galaxy S9+",
     userAgent: /SM-G965[A-Z]/,
-    minWidth: 412,
+    // Device width is 412
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 846,
     pixelRatio: 3.5,
     resizable: true,
@@ -237,7 +247,9 @@ export const Devices: Device[] = [
   {
     description: "Samsung Note 8, 9",
     userAgent: /SM-N9[56]0[A-Z]/,
-    minWidth: 414,
+    // Device width is 414
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 846,
     pixelRatio: 3.5,
     resizable: true,
@@ -246,7 +258,9 @@ export const Devices: Device[] = [
   {
     description: "Samsung Galaxy S6, S7, S7 Edge",
     userAgent: /SM-G9(3[05]|20)[A-Z]/,
-    minWidth: 360,
+    // Device width is 360
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 640,
     pixelRatio: 4,
     resizable: true,
@@ -255,7 +269,9 @@ export const Devices: Device[] = [
   {
     description: "Samsung A5",
     userAgent: /SM-A520[A-Z]/,
-    minWidth: 360,
+    // Device width is 360
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 640,
     pixelRatio: 2,
     resizable: true,
@@ -264,7 +280,9 @@ export const Devices: Device[] = [
   {
     description: "Samsung Galaxy Tab A 10.1",
     userAgent: /SM-T580/,
-    minWidth: 800,
+    // Device width is 800
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 1280,
     pixelRatio: 1.5,
     resizable: true,
@@ -273,7 +291,9 @@ export const Devices: Device[] = [
   {
     description: "Google Pixel 2 XL",
     userAgent: /Pixel 2 XL/,
-    minWidth: 411,
+    // Device width is 411.
+    // Minimum resizable viewport was reported by @ds300
+    minWidth: 383,
     maxWidth: 823,
     pixelRatio: 3.5,
     resizable: true,
@@ -282,7 +302,9 @@ export const Devices: Device[] = [
   {
     description: "Google Pixel 2",
     userAgent: /Pixel 2/,
-    minWidth: 411,
+    // Device width is 411
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 731,
     pixelRatio: 2.6,
     resizable: true,
@@ -291,7 +313,9 @@ export const Devices: Device[] = [
   {
     description: "Sony Xperia X71",
     userAgent: /G8341/,
-    minWidth: 360,
+    // Device width is 360
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 640,
     pixelRatio: 3,
     resizable: true,
@@ -300,7 +324,9 @@ export const Devices: Device[] = [
   {
     description: "Motorola Z Droid",
     userAgent: /XT1650/,
-    minWidth: 360,
+    // Device width is 360
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 640,
     pixelRatio: 4,
     resizable: true,
@@ -309,7 +335,9 @@ export const Devices: Device[] = [
   {
     description: "Motorola G4",
     userAgent: /Moto G \(4\)/,
-    minWidth: 360,
+    // Device width is 360
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 640,
     pixelRatio: 3,
     resizable: true,
@@ -318,18 +346,22 @@ export const Devices: Device[] = [
   {
     description: "Huawei P20 Lite",
     userAgent: /ANE-LX1/,
-    minWidth: 360,
+    // Device width is 360
+    // FIXME: Actual min width viewport unknown
+    minWidth: 0,
     maxWidth: 760,
     pixelRatio: 3,
     resizable: true,
     touch: true,
   },
-  // Specialized devices
+  /**
+   * Specialized devices
+   */
   {
     description: "Lyf Jio Phone",
     userAgent: /LYF\/F120B/,
     minWidth: 240,
-    // Device height is 320, but this phone only supports rotation in the video player.
+    // Device height is 320, but this phone only supports rotation in the video player so for our purposes it’s fixed
     maxWidth: 240,
     pixelRatio: 1,
     resizable: false,
