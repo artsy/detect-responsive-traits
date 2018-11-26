@@ -12,6 +12,7 @@
  * - http://www.tera-wurfl.com/explore/index.php
  * - https://www.mydevice.io
  * - http://responsivechecker.net/responsive
+ * - https://medium.com/@hacknicity/how-ipad-apps-adapt-to-the-new-11-and-12-9-ipads-pro-cabd1c0e5f20
  */
 
 /**
@@ -29,14 +30,27 @@ export interface Device {
   userAgent: RegExp
 
   /**
-   * The width of the device, when held in its portrait orientation.
+   * The minimum display width of the device, which is either the total width of the device’s viewport when held in its
+   * portrait orientation, or the smallest size the window can be resized to if the device supports window resizing.
    */
-  width: number
+  minWidth: number
 
   /**
-   * The height of the device, when held in its landscape orientation.
+   * The maximum display width of the device, which is the height of the device’s viewport when held in its portrait
+   * orientation.
    */
-  height: number
+  maxWidth: number
+
+  /**
+   * Wether or not the device supports resizing of windows.
+   *
+   * In case resizing is supported, the device should be considered as being able to display at any size between
+   * `minWidth` and `maxWidth`. In case resizing is not supported, `minWidth` and `maxWidth` should be considered as the
+   * only two possible width values.
+   *
+   * Devices that support resizing are iPads that support iOS >= 11 and all Android devices that support OS >= 7.
+   */
+  resizable: boolean
 
   /**
    * The number of pixels along an axis that make up 1 point.
@@ -54,245 +68,294 @@ export const Devices: Device[] = [
   {
     description: "iPhone XS Max",
     userAgent: /iPhone11,6/,
-    width: 414,
-    height: 896,
+    minWidth: 414,
+    maxWidth: 896,
     pixelRatio: 3,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPhone XR",
     userAgent: /iPhone11,8/,
-    width: 414,
-    height: 896,
+    minWidth: 414,
+    maxWidth: 896,
     pixelRatio: 2,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPhone X, XS",
     userAgent: /iPhone(10,[36]|11,2)/,
-    width: 375,
-    height: 812,
+    minWidth: 375,
+    maxWidth: 812,
     pixelRatio: 3,
+    resizable: false,
     touch: true,
   },
   {
     description: "Apple iPhone 6 Plus, 6S Plus, 7 Plus, 8 Plus",
     userAgent: /iPhone(7,1|8,2|9,[24]|10,[25])/,
-    width: 414,
-    height: 736,
+    minWidth: 414,
+    maxWidth: 736,
     pixelRatio: 3,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPhone 6, 6S, 7, 8",
     userAgent: /iPhone(7,2|8,1|9,3|10,[14])/,
-    width: 375,
-    height: 667,
+    minWidth: 375,
+    maxWidth: 667,
     pixelRatio: 2,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPhone 5, 5S, 5C, SE",
     userAgent: /iPhone(5,[1234]|6,[12]|8,4)/,
-    width: 320,
-    height: 568,
+    minWidth: 320,
+    maxWidth: 568,
     pixelRatio: 2,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPhone 3, 3GS, 4, 4S",
     userAgent: /iPhone(1,2|2,1|3,[123]|4,1)/,
-    width: 320,
-    height: 480,
+    minWidth: 320,
+    maxWidth: 480,
     pixelRatio: 1,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPod touch 5th, 6th generations",
     userAgent: /iPod(5,1|7,1)/,
-    width: 320,
-    height: 568,
+    minWidth: 320,
+    maxWidth: 568,
     pixelRatio: 2,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPod touch 4th generation",
     userAgent: /iPod4,1/,
-    width: 320,
-    height: 480,
+    minWidth: 320,
+    maxWidth: 480,
     pixelRatio: 2,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPod touch 1st, 2nd, 3rd generations",
     userAgent: /iPod(1,1|2,1|3,1)/,
-    width: 320,
-    height: 480,
+    minWidth: 320,
+    maxWidth: 480,
     pixelRatio: 1,
+    resizable: false,
     touch: true,
   },
   {
     description: "iPad 1, 2, Mini",
     userAgent: /iPad(1,1|2,1|2,5)/,
-    width: 1024,
-    height: 768,
+    minWidth: 768,
+    maxWidth: 1024,
     pixelRatio: 1,
+    resizable: false,
     touch: true,
   },
   {
-    description: "iPad 3, 4, Air, Mini 2, Mini 3, Mini 4, Air 2, Pro 9.7-inch, 5, 6",
-    userAgent: /iPad(3,[1-6]|4,[1-9]|5,[1-4]|6,[34]|6,1[12]|7,[56])/,
-    width: 1024,
-    height: 768,
+    description: "iPad 3, 4",
+    userAgent: /iPad3,[1-6]/,
+    minWidth: 768,
+    maxWidth: 1024,
+    pixelRatio: 2,
+    resizable: false,
+    touch: true,
+  },
+  // These iPads support iOS 11 and with it multitasking.
+  {
+    description: "iPad Air, Mini 2, Mini 3, Mini 4, Air 2, Pro 9.7-inch, 5, 6",
+    userAgent: /iPad(4,[1-9]|5,[1-4]|6,[34]|6,1[12]|7,[56])/,
+    // Device width 768
+    minWidth: 320,
+    maxWidth: 1024,
+    resizable: true,
     pixelRatio: 2,
     touch: true,
   },
   {
     description: "iPad Pro 12.9-inch 1st, 2nd, 3rd generations",
     userAgent: /iPad(6,[78]|7,[12]|8,[5-8])/,
-    width: 1024,
-    height: 1366,
+    // Device width 1024
+    minWidth: 320,
+    maxWidth: 1366,
     pixelRatio: 2,
+    resizable: true,
     touch: true,
   },
   {
     description: "iPad Pro 10.5-inch",
     userAgent: /iPad7,[34]/,
-    width: 834,
-    height: 1112,
+    // Device width 834,
+    minWidth: 320,
+    maxWidth: 1112,
     pixelRatio: 2,
+    resizable: true,
     touch: true,
   },
   {
     description: "iPad Pro 11-inch",
     userAgent: /iPad8,[1-4]/,
-    width: 834,
-    height: 1194,
+    // Device width 834,
+    minWidth: 320,
+    maxWidth: 1194,
     pixelRatio: 2,
+    resizable: true,
     touch: true,
   },
+  // All these Android devices support OS >=7 and with it multi-window support.
+  // TODO: Figure out what the minimum width is that the Chrome browser will display at.
   {
     description: "Samsung Galaxy S8, S8+, S9",
     userAgent: /SM-G9(5[05]|60)[A-Z]/,
-    width: 360,
-    height: 740,
+    minWidth: 360,
+    maxWidth: 740,
     pixelRatio: 4,
+    resizable: true,
     touch: true,
   },
   {
     description: "Samsung Galaxy S9+",
     userAgent: /SM-G965[A-Z]/,
-    width: 412,
-    height: 846,
+    minWidth: 412,
+    maxWidth: 846,
     pixelRatio: 3.5,
+    resizable: true,
     touch: true,
   },
   {
     description: "Samsung Note 8, 9",
     userAgent: /SM-N9[56]0[A-Z]/,
-    width: 414,
-    height: 846,
+    minWidth: 414,
+    maxWidth: 846,
     pixelRatio: 3.5,
+    resizable: true,
     touch: true,
   },
   {
     description: "Samsung Galaxy S6, S7, S7 Edge",
     userAgent: /SM-G9(3[05]|20)[A-Z]/,
-    width: 360,
-    height: 640,
+    minWidth: 360,
+    maxWidth: 640,
     pixelRatio: 4,
+    resizable: true,
     touch: true,
   },
   {
     description: "Samsung A5",
     userAgent: /SM-A520[A-Z]/,
-    width: 360,
-    height: 640,
+    minWidth: 360,
+    maxWidth: 640,
     pixelRatio: 2,
+    resizable: true,
     touch: true,
   },
   {
     description: "Samsung Galaxy Tab A 10.1",
     userAgent: /SM-T580/,
-    width: 800,
-    height: 1280,
+    minWidth: 800,
+    maxWidth: 1280,
     pixelRatio: 1.5,
+    resizable: true,
     touch: true,
   },
   {
     description: "Google Pixel 2 XL",
     userAgent: /Pixel 2 XL/,
-    width: 411,
-    height: 823,
+    minWidth: 411,
+    maxWidth: 823,
     pixelRatio: 3.5,
+    resizable: true,
     touch: true,
   },
   {
     description: "Google Pixel 2",
     userAgent: /Pixel 2/,
-    width: 411,
-    height: 731,
+    minWidth: 411,
+    maxWidth: 731,
     pixelRatio: 2.6,
+    resizable: true,
     touch: true,
-  },
-  {
-    description: "Lyf Jio Phone",
-    userAgent: /LYF\/F120B/,
-    width: 240,
-    height: 320,
-    pixelRatio: 1,
-    touch: false,
   },
   {
     description: "Sony Xperia X71",
     userAgent: /G8341/,
-    width: 360,
-    height: 640,
+    minWidth: 360,
+    maxWidth: 640,
     pixelRatio: 3,
+    resizable: true,
     touch: true,
   },
   {
     description: "Motorola Z Droid",
     userAgent: /XT1650/,
-    width: 360,
-    height: 640,
+    minWidth: 360,
+    maxWidth: 640,
     pixelRatio: 4,
+    resizable: true,
     touch: true,
   },
   {
     description: "Motorola G4",
     userAgent: /Moto G \(4\)/,
-    width: 360,
-    height: 640,
+    minWidth: 360,
+    maxWidth: 640,
     pixelRatio: 3,
+    resizable: true,
     touch: true,
   },
   {
     description: "Huawei P20 Lite",
     userAgent: /ANE-LX1/,
-    width: 360,
-    height: 760,
+    minWidth: 360,
+    maxWidth: 760,
     pixelRatio: 3,
+    resizable: true,
     touch: true,
+  },
+  // Specialized devices
+  {
+    description: "Lyf Jio Phone",
+    userAgent: /LYF\/F120B/,
+    minWidth: 240,
+    // Device height is 320, but this phone only supports rotation in the video player.
+    maxWidth: 240,
+    pixelRatio: 1,
+    resizable: false,
+    touch: false,
   },
 ]
 
-// Mobile Safari does not include model info, so default to largest versions
+// Mobile Safari does not include model info, so default to most inclusive unions of available versions
 Devices.push({
   description: "iPhone",
   userAgent: /iPhone;/,
+  resizable: false,
   touch: true,
   ...deviceUnion(Devices.filter(device => device.userAgent.toString().includes("iPhone"))),
 })
 Devices.push({
   description: "iPod touch",
   userAgent: /iPod touch;/,
+  resizable: false,
   touch: true,
   ...deviceUnion(Devices.filter(device => device.userAgent.toString().includes("iPod"))),
 })
 Devices.push({
   description: "iPad",
   userAgent: /iPad;/,
+  resizable: true,
   touch: true,
   ...deviceUnion(Devices.filter(device => device.userAgent.toString().includes("iPad"))),
 })
@@ -301,11 +364,11 @@ function deviceUnion(devices: Device[]) {
   return devices.reduce(
     (acc, device) => ({
       ...acc,
-      width: device.width > acc.width ? device.width : acc.width,
-      height: device.height > acc.height ? device.height : acc.height,
+      minWidth: device.minWidth < acc.minWidth ? device.minWidth : acc.minWidth,
+      maxWidth: device.maxWidth > acc.maxWidth ? device.maxWidth : acc.maxWidth,
       pixelRatio: device.pixelRatio > acc.pixelRatio ? device.pixelRatio : acc.pixelRatio,
     }),
-    { width: 0, height: 0, pixelRatio: 0 }
+    { minWidth: 999999, maxWidth: 0, pixelRatio: 0 } as Pick<Device, "minWidth" | "maxWidth" | "pixelRatio">
   )
 }
 
