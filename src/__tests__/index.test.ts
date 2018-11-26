@@ -1,6 +1,14 @@
 import { Devices, findDevice } from "../"
 import fixtures = require("./devices.json")
 
+describe("Devices", () => {
+  it("has a larger maxWidth than minWidth", () => {
+    Devices.forEach(device => {
+      expect(device.maxWidth).toBeGreaterThanOrEqual(device.minWidth)
+    })
+  })
+})
+
 describe("findDevice", () => {
   Object.entries(fixtures).forEach(([description, userAgents]) => {
     userAgents.forEach((userAgent, i) => {
@@ -14,8 +22,8 @@ describe("findDevice", () => {
     // tslint:disable-next-line:no-string-literal
     expect(findDevice(fixtures["iPhone"][0])).toMatchObject({
       description: "iPhone",
-      width: 414,
-      height: 896,
+      minWidth: 320,
+      maxWidth: 896,
       pixelRatio: 3,
       touch: true,
     })
@@ -24,8 +32,8 @@ describe("findDevice", () => {
   it("uses the largest iPod touch version for Mobile Safari, which does not include a model identifier", () => {
     expect(findDevice(fixtures["iPod touch"][0])).toMatchObject({
       description: "iPod touch",
-      width: 320,
-      height: 568,
+      minWidth: 320,
+      maxWidth: 568,
       pixelRatio: 2,
       touch: true,
     })
@@ -35,8 +43,8 @@ describe("findDevice", () => {
     // tslint:disable-next-line:no-string-literal
     expect(findDevice(fixtures["iPad"][0])).toMatchObject({
       description: "iPad",
-      width: 1024,
-      height: 1366,
+      minWidth: 320,
+      maxWidth: 1366,
       pixelRatio: 2,
       touch: true,
     })

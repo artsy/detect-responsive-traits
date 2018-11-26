@@ -66,13 +66,15 @@
         "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPad2,1;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/1;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
         "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/175.0.0.47.102;FBBV/112197024;FBDV/iPad2,5;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/1;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]"
     ],
-    "iPad 3, 4, Air, Mini 2, Mini 3, Mini 4, Air 2, Pro 9.7-inch, 5, 6": [
-        "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPad3,1;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
-        "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPad3,2;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/Verizon;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
-        "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/92.0.0.46.70;FBBV/57733420;FBDV/iPad3,3;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/AT&T;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
-        "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/181.0.0.33.81;FBBV/117675513;FBDV/iPad3,4;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]",
-        "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/194.0.0.38.99;FBBV/127868476;FBDV/iPad3,5;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Bell;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
-        "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/189.0.0.44.93;FBBV/124150883;FBDV/iPad3,6;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]",
+    "iPad 3, 4": [
+      "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPad3,1;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
+      "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/177.0.0.62.98;FBBV/114599009;FBDV/iPad3,2;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/Verizon;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
+      "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/92.0.0.46.70;FBBV/57733420;FBDV/iPad3,3;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/AT&T;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
+      "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/181.0.0.33.81;FBBV/117675513;FBDV/iPad3,4;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]",
+      "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/194.0.0.38.99;FBBV/127868476;FBDV/iPad3,5;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Bell;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
+      "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/189.0.0.44.93;FBBV/124150883;FBDV/iPad3,6;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    ],
+    "iPad Air, Mini 2, Mini 3, Mini 4, Air 2, Pro 9.7-inch, 5, 6": [
         "Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBIOS;FBAV/189.0.0.44.93;FBBV/124150883;FBDV/iPad4,1;FBMD/iPad;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]",
         "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPad4,2;FBMD/iPad;FBSN/iOS;FBSV/12.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
         "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 [FBAN/FBIOS;FBAV/198.0.0.57.101;FBBV/131415284;FBDV/iPad4,3;FBMD/iPad;FBSN/iOS;FBSV/12.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]",
