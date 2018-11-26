@@ -1,6 +1,6 @@
 {
   "name": "@artsy/detect-responsive-traits",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "build/index.js",
   "author": "Eloy Durán <eloy.de.enige@gmail.com> & Art.sy Inc",
