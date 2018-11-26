@@ -1,7 +1,12 @@
 .editorconfig
 .travis.yml
+ignore/
 node_modules/
+data/
 src/
+build/**/__tests__/*
+scripts/
+global.d.ts
 dangerfile.ts
 tsconfig.json
 tslint.json
