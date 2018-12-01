@@ -28,6 +28,7 @@
     "filter-data:not-ios": "ts-node scripts/filter-data-set.ts data/not-windows-macos-x11-or-ios.json",
     "filter-data": "yarn filter-data:not-android && yarn filter-data:not-ios"
   },
+  "repository": "https://github.com/artsy/detect-responsive-traits.git",
   "jest": {
     "preset": "ts-jest"
   },
