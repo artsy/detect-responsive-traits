@@ -1,7 +1,7 @@
-# detect-responsive-traits
+# @artsy/detect-responsive-traits
 
 This package provides information about devices, based on their reported user-agent, that gives insight into what
-responsive traits the device has. This can be used with a package such as [react-responsive-media][rrm] to only render
+responsive traits the device has. This can be used with a package such as [@artsy/react-responsive-media][rrm] to only render
 markup on the server that the device actually supports and reduce the amount of bytes that need to be sent.
 
 This package only cares about the viewport ‘width’ that the device supports, as that’s the only dimension that Artsy’s
@@ -27,7 +27,9 @@ possible width values.
 
 The `touch` value indicates if the device has a touch-screen.
 
-See the [react-responsive-media example app][rrm-example] for a demonstration of how to use this.
+## Example
+
+The [react-responsive-media example app][rrm-example] for a demonstration of how to use this with server-side rendered React.
 
 ## Caveats
 
