@@ -62,4 +62,4 @@ yarn release
 [artsy]: https://www.artsy.net
 [rrm]: https://github.com/artsy/react-responsive-media
 [rrm-example]: https://github.com/artsy/react-responsive-media/blob/master/example/server.tsx
-[viewport]: http://viewportsizes.com/mine
+[viewport]: http://whatismyviewport.com
