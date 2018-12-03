@@ -58,7 +58,7 @@ export interface Device {
   pixelRatio: number
 
   /**
-   * Wether or not the device is a touch-screen based device.
+   * Whether or not the device is a touch-screen based device.
    */
   touch: boolean
 }
