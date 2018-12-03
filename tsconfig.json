@@ -11,7 +11,8 @@
         "resolveJsonModule": true,
         "lib": [
             "es2017"
-        ]
+        ],
+        "strict": true
     },
     "include": [
         "src/**/*.ts",
