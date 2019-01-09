@@ -57,9 +57,15 @@ yarn jest
 
 ## How do I deploy this?
 
-```sh
-yarn release
-```
+This project uses [auto-release](https://github.com/intuit/auto-release#readme) to automatically release on every PR. Every PR should have a label that matches one of the following
+
+- Version: Trivial
+- Version: Patch
+- Version: Minor
+- Version: Major
+
+No release will happen on a `Trivial` update.
+
 
 [artsy]: https://www.artsy.net
 [rrm]: https://github.com/artsy/react-responsive-media

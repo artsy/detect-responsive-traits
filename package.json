@@ -5,15 +5,18 @@
   "main": "build/index.js",
   "author": "Eloy Durán <eloy.de.enige@gmail.com> & Art.sy Inc",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.12.9",
+    "auto-release-cli": "^1.0.0",
     "danger": "^6.1.4",
     "husky": "^1.0.0",
     "jest": "^23.6.0",
     "lint-staged": "^8.0.5",
     "prettier": "^1.14.3",
-    "release-it": "^8.0.0",
     "ts-jest": "^23.10.1",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
@@ -23,7 +26,7 @@
     "type-check": "tsc --noEmit",
     "build": "tsc",
     "lint": "tslint 'src/**/*.{ts,tsx}'",
-    "release": "release-it",
+    "release": "auto shipit",
     "filter-data:not-android": "ts-node scripts/filter-data-set.ts data/not-windows-macos-x11-or-android.json",
     "filter-data:not-ios": "ts-node scripts/filter-data-set.ts data/not-windows-macos-x11-or-ios.json",
     "filter-data": "yarn filter-data:not-android && yarn filter-data:not-ios"
