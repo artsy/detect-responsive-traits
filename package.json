@@ -26,6 +26,7 @@
     "type-check": "tsc --noEmit",
     "build": "tsc",
     "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "test": "jest",
     "release": "auto shipit",
     "filter-data:not-android": "ts-node scripts/filter-data-set.ts data/not-windows-macos-x11-or-android.json",
     "filter-data:not-ios": "ts-node scripts/filter-data-set.ts data/not-windows-macos-x11-or-ios.json",
