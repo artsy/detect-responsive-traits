@@ -11,7 +11,6 @@
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.12.9",
-    "auto-release-cli": "^1.0.0",
     "danger": "^6.1.4",
     "husky": "^1.0.0",
     "jest": "^23.6.0",
