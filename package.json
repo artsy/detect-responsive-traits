@@ -9,6 +9,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
+    "@artsy/auto-config": "^0.0.8",
     "@types/jest": "^23.3.2",
     "@types/node": "^10.12.9",
     "danger": "^6.1.4",
