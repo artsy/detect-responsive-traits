@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@artsy"
+  ],
+  "assignees": [
+    "zephraph",
+    "alloy"
+  ]
+}
