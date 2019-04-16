@@ -17,7 +17,6 @@ workflows:
           # tokens. We include a context that has our publish credentials
           # explicitly in this step. https://circleci.com/docs/2.0/contexts/
           context: npm-deploy
-          args: --verbose
           filters:
             branches:
               only: master
