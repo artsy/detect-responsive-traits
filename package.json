@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Get responsive size traits from a user agent",
   "main": "build/index.js",
-  "author": "Eloy Durán <eloy.de.enige@gmail.com> & Art.sy Inc",
+  "author": "Art.sy Inc <it@artsymail.com>",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
