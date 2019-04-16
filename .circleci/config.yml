@@ -11,7 +11,6 @@ workflows:
       - yarn/type-check
       - yarn/test
       - yarn/run:
-          name: danger
           script: danger
       - yarn/auto-release:
           # The deploy job is the _only_ job that should have access to our npm
