@@ -1,6 +1,6 @@
 {
   "name": "@artsy/detect-responsive-traits",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Get responsive size traits from a user agent",
   "main": "build/index.js",
   "author": "Art.sy Inc <it@artsymail.com>",
