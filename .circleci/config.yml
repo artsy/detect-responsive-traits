@@ -26,4 +26,3 @@ workflows:
             - yarn/test
             - yarn/lint
             - yarn/type-check
-            - yarn/run
