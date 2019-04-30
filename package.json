@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@artsy/auto-config": "0.1.0",
-    "@types/jest": "23.3.9",
+    "@types/jest": "23.3.14",
     "@types/node": "10.12.9",
     "danger": "6.1.4",
     "husky": "1.1.4",
