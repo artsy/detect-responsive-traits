@@ -15,7 +15,7 @@
     "danger": "6.1.4",
     "husky": "1.1.4",
     "jest": "23.6.0",
-    "lint-staged": "8.0.5",
+    "lint-staged": "8.1.5",
     "prettier": "1.17.0",
     "ts-jest": "23.10.4",
     "ts-node": "7.0.1",
