@@ -3,7 +3,9 @@
     "@artsy:lib"
   ],
   "assignees": [
-    "zephraph",
+    "zephraph"
+  ],
+  "reviewers": [
     "alloy"
   ]
 }
