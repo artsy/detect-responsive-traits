@@ -1,3 +1,41 @@
+# v0.0.5 (Mon Sep 02 2019)
+
+#### 🐛  Bug Fix
+
+- Update README.md [#53](https://github.com/artsy/detect-responsive-traits/pull/53) ([@javiercr](https://github.com/javiercr))
+
+#### 🏠  Internal
+
+- Update dependency tslint to v5.16.0 [#37](https://github.com/artsy/detect-responsive-traits/pull/37) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep @artsy/auto-config from 1.0.0 to v1.0.1 [#51](https://github.com/artsy/detect-responsive-traits/pull/51) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep @artsy/auto-config from 0.1.2 to v1 [#49](https://github.com/artsy/detect-responsive-traits/pull/49) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep @artsy/auto-config from 0.1.0 to v0.1.2 [#48](https://github.com/artsy/detect-responsive-traits/pull/48) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep @types/jest from 23.3.14 to v24 [#47](https://github.com/artsy/detect-responsive-traits/pull/47) ([@renovate-bot](https://github.com/renovate-bot))
+- Update renovate config to use reviewers instead of assignees [#46](https://github.com/artsy/detect-responsive-traits/pull/46) ([@zephraph](https://github.com/zephraph))
+- Update dependency danger to v7 [#41](https://github.com/artsy/detect-responsive-traits/pull/41) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency husky to v2 [#42](https://github.com/artsy/detect-responsive-traits/pull/42) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @types/node to v10.14.6 [#32](https://github.com/artsy/detect-responsive-traits/pull/32) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency husky to v1.3.1 [#34](https://github.com/artsy/detect-responsive-traits/pull/34) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v2 [#52](https://github.com/artsy/detect-responsive-traits/pull/52) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency lint-staged to v8.1.5 [#35](https://github.com/artsy/detect-responsive-traits/pull/35) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency danger to v6.1.13 [#33](https://github.com/artsy/detect-responsive-traits/pull/33) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @types/jest to v23.3.14 [#31](https://github.com/artsy/detect-responsive-traits/pull/31) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency ts-jest to v23.10.5 [#36](https://github.com/artsy/detect-responsive-traits/pull/36) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency typescript to v3.4.5 [#38](https://github.com/artsy/detect-responsive-traits/pull/38) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep prettier from 1.15.2 to v1.17.0 [#30](https://github.com/artsy/detect-responsive-traits/pull/30) ([@renovate-bot](https://github.com/renovate-bot))
+- Use artsy's lib renovate preset [#29](https://github.com/artsy/detect-responsive-traits/pull/29) ([@zephraph](https://github.com/zephraph))
+- Pin dependencies [#28](https://github.com/artsy/detect-responsive-traits/pull/28) ([@renovate-bot](https://github.com/renovate-bot))
+- Use master issue approval workflow [#25](https://github.com/artsy/detect-responsive-traits/pull/25) ([@zephraph](https://github.com/zephraph))
+- Remove verbose arg from auto [#24](https://github.com/artsy/detect-responsive-traits/pull/24) ([@zephraph](https://github.com/zephraph))
+
+#### Authors: 3
+
+- Renovate Bot ([@renovate-bot](https://github.com/renovate-bot))
+- Javier Cuevas ([@javiercr](https://github.com/javiercr))
+- Justin Bennett ([@zephraph](https://github.com/zephraph))
+
+---
+
 # v0.0.3 (Tue Apr 16 2019)
 
 #### 🐛  Bug Fix
