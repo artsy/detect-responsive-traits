@@ -1,7 +1,7 @@
 # @artsy/detect-responsive-traits
 
 This package provides information about devices, based on their reported user-agent, that gives insight into what
-responsive traits the device has. This can be used with a package such as [@artsy/react-responsive-media][rrm] to only render
+responsive traits the device has. This can be used with a package such as [@artsy/fresnel][fresnel] to only render
 markup on the server that the device actually supports and reduce the amount of bytes that need to be sent.
 
 This package only cares about the viewport ‘width’ that the device supports, as that’s the only dimension that Artsy’s
@@ -68,6 +68,6 @@ No release will happen on a `Trivial` update.
 
 
 [artsy]: https://www.artsy.net
-[rrm]: https://github.com/artsy/react-responsive-media
+[fresnel]: https://github.com/artsy/fresnel
 [rrm-example]: https://github.com/artsy/react-responsive-media/blob/master/example/server.tsx
 [viewport]: http://whatismyviewport.com
