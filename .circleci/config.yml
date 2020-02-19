@@ -12,6 +12,7 @@ workflows:
       - yarn/type-check
       - yarn/test
       - yarn/run:
+          name: danger
           script: danger
       - auto/publish-canary:
           context: npm-deploy
