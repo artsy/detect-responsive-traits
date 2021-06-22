@@ -1,3 +1,56 @@
+# v0.1.0 (Tue Jun 22 2021)
+
+#### 🚀  Enhancement
+
+- Remove me, Eloy from renovate config [#91](https://github.com/artsy/detect-responsive-traits/pull/91) ([@zephraph](https://github.com/zephraph))
+
+#### 🏠  Internal
+
+- Update auto orb from 1.2.0 to v1.2.1 [#71](https://github.com/artsy/detect-responsive-traits/pull/71) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.3.3 to v4.3.4 [#90](https://github.com/artsy/detect-responsive-traits/pull/90) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.2.4 to v4.3.2 [#88](https://github.com/artsy/detect-responsive-traits/pull/88) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.2.3 to v4.2.4 [#87](https://github.com/artsy/detect-responsive-traits/pull/87) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.2.2 to v4.2.3 [#86](https://github.com/artsy/detect-responsive-traits/pull/86) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.1.5 to v4.2.2 [#85](https://github.com/artsy/detect-responsive-traits/pull/85) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.1.3 to v4.1.5 [#84](https://github.com/artsy/detect-responsive-traits/pull/84) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.1.2 to v4.1.3 [#83](https://github.com/artsy/detect-responsive-traits/pull/83) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 3.9.7 to v4 [#82](https://github.com/artsy/detect-responsive-traits/pull/82) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typescript from 3.9.6 to v3.9.7 [#81](https://github.com/artsy/detect-responsive-traits/pull/81) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 3.9.5 to v3.9.6 [#80](https://github.com/artsy/detect-responsive-traits/pull/80) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 3.9.3 to v3.9.5 [#79](https://github.com/artsy/detect-responsive-traits/pull/79) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 3.9.2 to v3.9.3 [#78](https://github.com/artsy/detect-responsive-traits/pull/78) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb from 5.1.1 to v5.1.3 [#76](https://github.com/artsy/detect-responsive-traits/pull/76) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 3.8.3 to v3.9.2 [#77](https://github.com/artsy/detect-responsive-traits/pull/77) ([@renovate-bot](https://github.com/renovate-bot))
+- Update auto orb from 1.2.1 to v1.3.2 [#75](https://github.com/artsy/detect-responsive-traits/pull/75) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb from 5.1.0 to v5.1.1 [#74](https://github.com/artsy/detect-responsive-traits/pull/74) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb from 5.0.0 to v5.1.0 [#73](https://github.com/artsy/detect-responsive-traits/pull/73) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.3.2 to v4.3.3 [#89](https://github.com/artsy/detect-responsive-traits/pull/89) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb from 4.0.2 to v5 [#72](https://github.com/artsy/detect-responsive-traits/pull/72) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update auto orb from 1.1.0 to v1.2.0 [#70](https://github.com/artsy/detect-responsive-traits/pull/70) ([@renovate-bot](https://github.com/renovate-bot))
+- Update auto orb to v1.1.0 [#69](https://github.com/artsy/detect-responsive-traits/pull/69) ([@renovate-bot](https://github.com/renovate-bot))
+- Update auto orb to v1.0.2 [#68](https://github.com/artsy/detect-responsive-traits/pull/68) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v4.0.2 [#67](https://github.com/artsy/detect-responsive-traits/pull/67) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 3.8.2 to v3.8.3 [#66](https://github.com/artsy/detect-responsive-traits/pull/66) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v4.0.1 [#65](https://github.com/artsy/detect-responsive-traits/pull/65) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typescript from 3.7.5 to v3.8.2 [#64](https://github.com/artsy/detect-responsive-traits/pull/64) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v4 [#63](https://github.com/artsy/detect-responsive-traits/pull/63) ([@renovate-bot](https://github.com/renovate-bot) [@zephraph](https://github.com/zephraph) [@renovate[bot]](https://github.com/renovate[bot]))
+- Pin dep @artsy/auto-config from ^1.0.2 to 1.0.2 [#62](https://github.com/artsy/detect-responsive-traits/pull/62) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v3 [#61](https://github.com/artsy/detect-responsive-traits/pull/61) ([@renovate-bot](https://github.com/renovate-bot) [@zephraph](https://github.com/zephraph) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typescript from 3.7.4 to v3.7.5 [#59](https://github.com/artsy/detect-responsive-traits/pull/59) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typescript from 3.7.3 to v3.7.4 [#58](https://github.com/artsy/detect-responsive-traits/pull/58) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep husky from 2.1.0 to v3 [#57](https://github.com/artsy/detect-responsive-traits/pull/57) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typescript from 3.7.2 to v3.7.3 [#56](https://github.com/artsy/detect-responsive-traits/pull/56) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typescript from 3.4.5 to v3.7.2 [#55](https://github.com/artsy/detect-responsive-traits/pull/55) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update yarn orb to v2.1.1 [#54](https://github.com/artsy/detect-responsive-traits/pull/54) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Justin Bennett ([@zephraph](https://github.com/zephraph))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.0.5 (Mon Sep 02 2019)
 
 #### 🐛  Bug Fix
