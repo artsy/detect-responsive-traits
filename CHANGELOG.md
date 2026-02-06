@@ -1,3 +1,20 @@
+# v0.2.1 (Fri Feb 06 2026)
+
+#### 🐛  Bug Fix
+
+- feat: add triggers to conventional commits check [#153](https://github.com/artsy/detect-responsive-traits/pull/153) ([@amonkhouse](https://github.com/amonkhouse))
+
+#### 🏠  Internal
+
+- chore(deps): update dep auto from 2.2.0 to v2.3.0 [#149](https://github.com/artsy/detect-responsive-traits/pull/149) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Amy Monkhouse ([@amonkhouse](https://github.com/amonkhouse))
+
+---
+
 # v0.2.0 (Wed Nov 19 2025)
 
 #### 🚀  Enhancement
